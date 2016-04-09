@@ -1,0 +1,23 @@
+{
+  "name": "hue-lab5",
+  "version": "1.0.0",
+  "description": "lab exercise 5",
+  "main": "Promises/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node ./node_modules/http-server/bin/http-server exercises -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-em/hue-lab5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-em/hue-lab5/issues"
+  },
+  "homepage": "https://github.com/paul-em/hue-lab5#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

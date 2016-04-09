@@ -1,4 +1,4 @@
-function get(url, callback, errorCallback) {
+function requestEs5(url, callback, errorCallback) {
     var req = new XMLHttpRequest();
     req.open('GET', url);
 
@@ -22,8 +22,21 @@ function get(url, callback, errorCallback) {
     req.send();
 }
 
-get("data.txt", function(data){
-    console.log("Success!", data);
-}, function(err){
-    console.log("Error", err);
+requestEs5("data.txt", function (data) {
+    console.log("ES5 Success!", data);
+}, function (err) {
+    console.log("ES5 Error", err);
 });
+
+
+function requestEs6(){} // TODO: implement
+
+/* // TODO: uncomment and check if correct output
+requestEs6("data.txt")
+    .then(function (data) {
+        console.log("ES6 Success!", data);
+    })
+    .catch(function (err) {
+        console.log("ES6 Error", err);
+    });
+*/
